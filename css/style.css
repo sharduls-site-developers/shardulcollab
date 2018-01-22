@@ -109,7 +109,7 @@ input[type="submit"],a,.agileinfo_social_icons li{
     text-transform: uppercase;
     font-weight: 600;
 }
-.navbar-nav > li:nth-child(3){
+.thirdli{
     margin-right:19.6em !important;
 }
 .w3_navigation_pos{
@@ -1892,7 +1892,7 @@ span.char26 {
 	.navbar-nav > li > a {
 		padding: 1em 1.7em;
 	}
-	.navbar-nav > li:nth-child(3) {
+	.thirdli {
 		margin-right: 15.6em !important;
 	}
 	.w3_navigation_pos {
@@ -2008,7 +2008,7 @@ span.char26 {
 	.w3_navigation_pos h1 a {
 		font-size: .8em;
 	}
-	.navbar-nav > li:nth-child(3) {
+	.thirdli {
 		margin-right: 15.6em !important;
 	}
 	.w3_navigation_pos {
@@ -2258,7 +2258,7 @@ span.char26 {
 		margin: 1em;
 		font-size: 14px;
 	}
-	.navbar-nav > li:nth-child(3) {
+	.thirdli {
 		margin-right: 1em !important;
 	}
 	.menu--miranda .menu__item:last-child {
