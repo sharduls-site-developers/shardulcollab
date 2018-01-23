@@ -48,6 +48,32 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     .hiddensmartphone {
     visibility: hidden;}
 }
+        
+        
+        
+.accordion {
+    background-color: white;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+ .accordion:hover {
+    background-color: red; 
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: antiquewhite;
+    overflow: hidden;
+}        
 
 </style>
     
@@ -141,7 +167,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 					<nav class="menu menu--miranda">
 						<ul class="nav navbar-nav menu__list"id="navlink" style="float:right">
-							<li class="menu__item menu__item--current"><a href="index.html" class="menu__link"style="padding: 15px">Home</a></li>
+							<li class="menu__item menu"><a href="index.html" class="menu__link"style="padding: 15px">Home</a></li>
 							<li class="menu__item"><a href="#about" class="scroll menu__link"style="padding: 15px">Academics</a></li>
 							<li class="menu__item "><a href="#programs" class="scroll menu__link"style="padding: 15px">Centers</a></li>			
 							<li class="menu__item"><a href="#team" class="scroll menu__link"style="padding: 15px">Team</a></li>
@@ -383,48 +409,48 @@ function scrollFunction() {
 					<div class="view view-first">
 						<img src="images/2.jpg" alt=" " class="img-responsive" />
 						<div class="mask">
-							<h5>Nursery</h5>
+							<h5>છાવા</h5>
 							<p>Integer ac condimentum ligula. Ut malesuada in purus convallis venenatis.</p>
 						</div>
 					</div>
 					<div class="agile_banner_bottom_grid_pos">
-						<h4>Drawing</h4>
+						<h4>૨ થી ૩ વર્ષ</h4>
 					</div>
             </div></a></a>
 				<a href="pg2.html"target="_blank"><div class="col-md-3 agile_banner_bottom_grid">
 					<div class="view view-first">
 						<img src="images/3.jpg" alt=" " class="img-responsive" />
 						<div class="mask">
-							<h5 class="agileits_w3layouts1">Nursery</h5>
+							<h5 class="agileits_w3layouts1">સાવજ-કેસરી</h5>
 							<p>Integer ac condimentum ligula. Ut malesuada in purus convallis venenatis.</p>
 						</div>
 					</div>
 					<div class="agile_banner_bottom_grid_pos">
-						<h4 class="agileits_w3layouts1">Learning</h4>
+						<h4 class="agileits_w3layouts1">૩ થી ૫ વર્ષ</h4>
 					</div>
 				</div></a>
 				<a href="pg3.html"target="_blank"><div class="col-md-3 agile_banner_bottom_grid">
 					<div class="view view-first">
 						<img src="images/4.jpg" alt=" " class="img-responsive" />
 						<div class="mask">
-							<h5 class="agileits_w3layouts2">Nursery</h5>
+							<h5 class="agileits_w3layouts2">મૃગેન્દ્ર-પુંડરીક</h5>
 							<p>Integer ac condimentum ligula. Ut malesuada in purus convallis venenatis.</p>
 						</div>
 					</div>
 					<div class="agile_banner_bottom_grid_pos">
-						<h4 class="agileits_w3layouts2">Playing</h4>
+						<h4 class="agileits_w3layouts2">૫ થી ૭ વર્ષ</h4>
 					</div>
 				</div></a>
 				<a href="pg4.html"target="_blank"><div class="col-md-3 agile_banner_bottom_grid">
 					<div class="view view-first">
 						<img src="images/5.jpg" alt=" " class="img-responsive" />
 						<div class="mask">
-							<h5 class="agileits_w3layouts3">Nursery</h5>
+							<h5 class="agileits_w3layouts3">ગુરુકુલ</h5>
 							<p>Integer ac condimentum ligula. Ut malesuada in purus convallis venenatis.</p>
 						</div>
 					</div>
 					<div class="agile_banner_bottom_grid_pos">
-						<h4 class="agileits_w3layouts3">Laughing</h4>
+						<h4 class="agileits_w3layouts3">8 વર્ષ પછી</h4>
 					</div>
 				</div></a>
 				<div class="clearfix"> </div>
@@ -440,18 +466,41 @@ function scrollFunction() {
 			<div class="agile_banner_bottom_grids">
 				<div id="verticalTab">
 					<ul class="resp-tabs-list">
-						<li><i class="fa fa-rocket" aria-hidden="true"></i>Playing Science</li>
-						<li><i class="fa fa-music" aria-hidden="true"></i>Music Classes</li>
-						<li><i class="fa fa-bed" aria-hidden="true"></i>Sleep Center</li>
-						<li><i class="fa fa-gamepad" aria-hidden="true"></i>Sport Games</li>
+						<li><i class="fa fa-rocket" aria-hidden="true"></i>Ahmedabad</li>
+						<li><i class="fa fa-rocket" aria-hidden="true"></i>Bhavnagar</li>
+						<li><i class="fa fa-rocket" aria-hidden="true"></i>Surat</li>
+						<li><i class="fa fa-rocket" aria-hidden="true"></i>vadodara</li>
 					</ul>
 					<div class="resp-tabs-container">
 						<div class="w3layouts_vertical_tab">
-							<p>Proin id arcu odio. Proin tincidunt ante lacus, at commodo felis 
-								aliquam eu. Praesent ut turpis venenatis, aliquam mauris tempus, lobortis 
-								nunc. Pellentesque maximus ipsum turpis.
-								<i>" Cras feugiat dui augue, in malesuada sem porta id. Mauris tempor 
-									aliquam risus eget sagittis. Nulla eu imperdiet mauris.</i></p>
+							---
+                            <button class="accordion">Section 1</button>
+<div class="panel"> 
+  <p style="color: black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Section 2</button>
+<div class="panel">
+  <p style="color: black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br><br>asdlkfh<br><br>dshaf</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+</script>
+                            ---
 							<ul>
 								<li><i class="fa fa-check-square-o" aria-hidden="true"></i>Nulla eu imperdiet mauris in nunc</li>
 								<li><i class="fa fa-check-square-o" aria-hidden="true"></i>Vestibulum posuere eros et ante auctor</li>
@@ -509,9 +558,9 @@ function scrollFunction() {
 	</div>
 <!-- //programs -->
 <!-- team -->
-	<div id="team" class="team">
+	<div id="team" class="team" style="background-image: url(images/texture-shardul1.jpeg); background-size: cover">
 		<div class="container">
-			<h3 class="w3_agileits_head">Our <span class="w3_child">T</span><span class="w3_child1">e</span><span class="w3_child2">a</span><span class="w3_child4">m</span> Players</h3>
+			<h3 class="w3_agileits_head">Our <span class="w3_child">T</span><span class="w3_child1">e</span><span class="w3_child">a</span><span class="w3_child4">m</span> Players</h3>
 			<p class="w3_agile_elit">Quisque dictum elit in nunc malesuada lacinia. Cras id porttitor turpis.</p>
 			<div class="agile_banner_bottom_grids">
 				<div class="w3_slider">
@@ -741,7 +790,7 @@ function scrollFunction() {
 		</div>
 	</div>
 <!-- //testimonials -->
-<!-- work -->
+    <!-- work -->
 	<div id="work" class="work">
 		<div class="container">
 			<h3 class="w3_agileits_head">Our <span class="w3_child">W</span><span class="w3_child1">o</span><span class="w3_child4">r</span><span class="w3_child2">k</span> in Nursery</h3>
@@ -958,7 +1007,7 @@ function scrollFunction() {
 	</div>
 <!-- //work -->
 <!-- newsletter -->
-	<div id="newsletter" class="newsletter">
+	<!--<div id="newsletter" class="newsletter">
 		<div class="container">
 			<div class="col-md-5 w3layouts_newsletter_left">
 				<h3>Subscribe to our newsletter</h3>
@@ -971,7 +1020,7 @@ function scrollFunction() {
 			</div>
 			<div class="clearfix"> </div>
 		</div>
-	</div>
+	</div>-->
 <!-- //newsletter -->
 <!-- contact -->
 	<div id="mail" class="contact">
@@ -1053,8 +1102,9 @@ function scrollFunction() {
 <!-- footer -->
 	<div class="w3_agileits_twitter_post">
 		<div class="container">
-			<h4>"Pellentesque habitant morbi tristique senectus et netus <a href="#">
-				http://example.com</a> egestas."</h4>
+			<!--<h4>"Pellentesque habitant morbi tristique senectus et netus <a href="#">
+				http://example.com</a> egestas."</h4>-->
+            <h4><marquee>This text will scroll from right to left</marquee></h4>
 		</div>
 	</div>
 	<div class="footer">

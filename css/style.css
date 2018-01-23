@@ -695,7 +695,6 @@ span.char26 {
 }
 .agile_banner_bottom_grid{
 	border:1px solid #fa3d03;
-	border-right:none;
 	padding:1em;
 	position:relative;
 }
@@ -839,17 +838,7 @@ span.char26 {
 	position:relative;
 	z-index: 1;
 }
-.programs:before{
-	content:'';
-	background:url(../images/6.jpg) no-repeat 0px 0px;
-	display:block;
-	width:450px;
-	height:320px;
-	position:absolute;
-	right:0%;
-	bottom:0%;
-	z-index: -1;
-}
+
 .w3_agileits_head{
 	font-size:2em;
 }
@@ -1671,14 +1660,14 @@ span.char26 {
 .w3_agileits_twitter_post h4 a:hover{
 	color:#212121;
 }
-.w3_agileits_twitter_post h4:before{
+/*.w3_agileits_twitter_post h4:before{
 	content:"\f099";
 	color:#1da1f2;
 	font-family:FontAwesome;
 	position:absolute;
 	top:0%;
 	left:0%;
-}
+}*/
 .footer{
 	border: 2px solid #14a1ff;
 	border-top:none;
@@ -1838,12 +1827,7 @@ span.char26 {
 	.center-container {
 		padding: 15em 0;
 	}
-	.programs:before {
-		background: url(../images/6.jpg) no-repeat 0px 0px;
-		background-size: 100%;
-		width: 325px;
-		height: 227px;
-	}
+	
 	.wthree_footer_grid_right1 ul {
 		padding: .95em 4em;
 	}
