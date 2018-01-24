@@ -52,7 +52,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         
         
 .accordion {
-    background-color: white;
+    background-color: #65b126;
     color: #444;
     cursor: pointer;
     padding: 18px;
@@ -71,7 +71,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 .panel {
     padding: 0 18px;
     display: none;
-    background-color: antiquewhite;
+    background-color: white;
     overflow: hidden;
 }        
 
@@ -120,7 +120,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li class="menu__item"><a href="#about" class="scroll menu__link">Academics</a></li>
 							<li class="menu__item thirdli"><a href="#programs" class="scroll menu__link">Centers</a></li>
                             <li class="menu__item"><a href="#team" class="scroll menu__link">Team</a></li>
-							<li class="menu__item"><a href="#testimonials" class="scroll menu__link">Parents say</a></li>
+							<li class="menu__item"><a name="abc" href="#testimonials" class="scroll menu__link">Parents say</a></li>
 							<li class="menu__item"><a href="#mail" class="scroll menu__link">contact Us</a></li>
 						</ul>
 					</nav>
@@ -405,7 +405,7 @@ function scrollFunction() {
 			<h3>a <span class="w3_child">c</span><span class="w3_child1">h</span><span class="w3_child2">i</span><span class="w3_child3">l</span><span class="w3_child4">d</span>'s life is like a piece of paper on which every person leaves a mark</h3>
 			<p class="w3_agile_elit">Quisque dictum elit in nunc malesuada lacinia. Cras id porttitor turpis.</p>
 			<div class="agile_banner_bottom_grids">
-				<a href="pg1.html"target="_blank"><div class="col-md-3 agile_banner_bottom_grid">
+				<a href="pg1.html"target="_self"><div class="col-md-3 agile_banner_bottom_grid">
 					<div class="view view-first">
 						<img src="images/2.jpg" alt=" " class="img-responsive" />
 						<div class="mask">
@@ -475,12 +475,12 @@ function scrollFunction() {
 						<div class="w3layouts_vertical_tab">
 							---
                             <button class="accordion">Section 1</button>
-<div class="panel"> 
+<div class="panel" id="p1"> 
   <p style="color: black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
 
 <button class="accordion">Section 2</button>
-<div class="panel">
+<div class="panel" id="p2">
   <p style="color: black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br><br>asdlkfh<br><br>dshaf</p>
 </div>
 
@@ -492,22 +492,26 @@ for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function() {
         this.classList.toggle("active");
         var panel = this.nextElementSibling;
+        
         if (panel.style.display === "block") {
             panel.style.display = "none";
+            
         } else {
+            document.getElementById("p1").style.display="none";
+        	document.getElementById("p2").style.display="none";
             panel.style.display = "block";
         }
     });
 }
 </script>
                             ---
-							<ul>
+							<!--<ul>
 								<li><i class="fa fa-check-square-o" aria-hidden="true"></i>Nulla eu imperdiet mauris in nunc</li>
 								<li><i class="fa fa-check-square-o" aria-hidden="true"></i>Vestibulum posuere eros et ante auctor</li>
 								<li><i class="fa fa-check-square-o" aria-hidden="true"></i>Curabitur leo nisl, viverra eu urna id</li>
 								<li><i class="fa fa-check-square-o" aria-hidden="true"></i>Suspendisse potenti uisque dictum elit</li>
 								<li><i class="fa fa-check-square-o" aria-hidden="true"></i>Phasellus a eros eleifend, vehicula ante</li>
-							</ul>
+							</ul>-->
 						</div>
 						<div class="w3layouts_vertical_tab">
 							<p>Donec felis mi, tristique in sodales non, porttitor id orci. 
@@ -690,7 +694,7 @@ for (i = 0; i < acc.length; i++) {
 	</div>
 <!-- //team -->
 <!-- events -->
-	<div id="events" class="events">
+	<!--<div id="events" class="events">
 		<div class="container">
 			<h3 class="w3_agileits_head">Our Latest <span class="w3_child">E</span><span class="w3_child1">v</span><span class="w3_child2">e</span><span class="w3_child4">n</span><span class="w3_child">t</span><span class="w3_child1">s</span></h3>
 			<p class="w3_agile_elit">Quisque dictum elit in nunc malesuada lacinia. Cras id porttitor turpis.</p>
@@ -745,7 +749,7 @@ for (i = 0; i < acc.length; i++) {
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>-->
 <!-- //events -->
 <!-- testimonials -->
 	<div id="testimonials" class="testimonials">
@@ -791,7 +795,7 @@ for (i = 0; i < acc.length; i++) {
 	</div>
 <!-- //testimonials -->
     <!-- work -->
-	<div id="work" class="work">
+	<!--<div id="work" class="work">
 		<div class="container">
 			<h3 class="w3_agileits_head">Our <span class="w3_child">W</span><span class="w3_child1">o</span><span class="w3_child4">r</span><span class="w3_child2">k</span> in Nursery</h3>
 			<p class="w3_agile_elit">Quisque dictum elit in nunc malesuada lacinia. Cras id porttitor turpis.</p>
@@ -1005,7 +1009,7 @@ for (i = 0; i < acc.length; i++) {
 			</div>
 		</div>
 	</div>
-<!-- //work -->
+--><!-- //work -->
 <!-- newsletter -->
 	<!--<div id="newsletter" class="newsletter">
 		<div class="container">

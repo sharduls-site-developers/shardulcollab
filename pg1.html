@@ -48,21 +48,255 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     .hiddensmartphone {
     visibility: hidden;}
 }
+        
+        
+        
+.accordion {
+    background-color: #65b126;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+ .accordion:hover {
+    background-color: red; 
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}        
 
 </style>
     
     </head>
 	
-    <body>
+<body>
 
+<!-- header -->
+<!--	<div class="w3_agile_header">
+		<div class="container">
+			<div class="w3_agile_header_left">
+				<p>Suspendisse porta varius urna.</p>
+			</div>
+			<div class="w3_agile_header_right">
+				<ul>a
+					<li><a href="#small-dialog" class="play-icon popup-with-zoom-anim">Login</a></li>
+					<li><i class="fa fa-phone" aria-hidden="true"></i> +(0123) 454 343</li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>-->
+    
+                               <div class="w3_navigation">
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<div class="navbar-header navbar-left">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="w3_navigation_pos" > 
+                        <h1 style="border-radius: 0 0px 100px 100px;z-index: 5000;background-color:white">
+						<a href="index.html"><img src="images/logo_png.png"></a>
+                    </h1></div>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+					<nav class="menu menu--miranda">
+						<ul class="nav navbar-nav menu__list" id="navlink">
+							<li class="menu__item menu__item--current"><a href="index.html" class="menu__link">Home</a></li>
+							<li class="menu__item"><a href="#about" class="menu__link">Academics</a></li>
+							<li class="menu__item thirdli"><a href="index.html" class="menu__link">Centers</a></li>
+                            <li class="menu__item"><a href="#team" class="menu__link">Team</a></li>
+							<li class="menu__item"><a href="/shardulcollab/index.html#mail" class="menu__link">Parents say</a></li>
+							<li class="menu__item"><a href="/shardulcollab/index.html#mail" class=" menu__link">test Us</a></li>
+						</ul>
+					</nav>
+				</div>
+			</nav>	
+		</div>
+    </div>
+    
+    
+<!--    <div class="w3_navigation"><div style="z-index: 10009;background-color: white;">-->
+		
+<!--    <nav class="navbar menu menu--miranda">-->
+<!--    <div class="container" >-->
+			
+<!--        <div class="navbar-header"><a class="navbar-brand" href="index.html"> <img src="images/logo_png.png"> </a></div>-->
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				
+<!--					<nav class="menu menu--miranda">-->
+<!--						<ul class="nav navbar-nav navbar-right menu__list">-->
+<!--							<li class="menu__item menu__item--current"style="float: right"><a href="index.html" class="menu__link">Home</a></li>-->
+<!--							<li class="menu__item"style="float: right"><a href="#events" class="scroll menu__link">Our Events</a></li>-->
+<!--							<li class="menu__item "style="float: right"><a href="#programs" class="scroll menu__link">Programs</a></li>-->
+<!--							<li class="menu__item"style="float: right"><a href="#work" class="scroll menu__link">Work</a></li>-->
+<!--							<li class="menu__item"style="float: right"><a href="#team" class="scroll menu__link">Team</a></li>-->
+<!--							<li class="menu__item" style="float: right"><a href="#mail" class="scroll menu__link">Mail Us</a></li>-->
+<!--						</ul>-->
+<!--        </div></nav>		</div>-->
+<!--
+				</div>
+			</div>
+    </div></div>-->
+    <div class="hiddensmartphone">
+    <div style="position: fixed; z-index: 150000; width:100%; top:-90px;">
+    <div class="w3_navigation" id="navbar" style="width:100%;background: linear-gradient(white,#fff5cc 70%,white);">
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<div class="navbar-header navbar-left">
+					
+					<div > <h1 style="z-index: 5000;background-color:white;padding:5px;margin:auto">
+						<a href="index.html"><img src="images/logo_small.png"   ></a>
+                    </h1></div>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+					<nav class="menu menu--miranda">
+						<ul class="nav navbar-nav menu__list"id="navlink" style="float:right">
+							<li class="menu__item menu"><a href="index.html" class="menu__link"style="padding: 15px">Home</a></li>
+							<li class="menu__item"><a href="#about" class="scroll menu__link"style="padding: 15px">Academics</a></li>
+							<li class="menu__item "><a href="#programs" class="scroll menu__link"style="padding: 15px">Centers</a></li>			
+							<li class="menu__item"><a href="#team" class="scroll menu__link"style="padding: 15px">Team</a></li>
+                            <li class="menu__item"><a href="#testimonials" class="scroll menu__link"style="padding: 15px">Parents say</a></li>
+							<li class="menu__item"><a href="#mail" class="scroll menu__link" style="padding: 15px">Contact Us</a></li>
+						</ul>
+					</nav>
+				</div>
+			</nav>	
+		</div>
+        </div></div></div>
+    <script>
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+        document.getElementById("navbar").style.top = "0";
+    } else {
+        document.getElementById("navbar").style.top = "-90px";
+    }
+}
+</script>
+    
+    
+    
+    
+    
+    
+
+
+    
+    
     <div "style= z-index: 1">
+<!-- //header -->
+<!-- pop-up-box--
+	<div id="small-dialog" class="mfp-hide w3ls_small_dialog wthree_pop">
+		<h3>LOGIN</h3>		
+		<div class="agileits_modal_body">
+			<form action="#" method="post">
+				<div class="agileits_w3layouts_user">
+					<i class="fa fa-user" aria-hidden="true"></i>
+					<input type="text" name="Name" placeholder="User Name" required="">
+				</div>
+				<div class="agileits_w3layouts_user">
+					<i class="fa fa-key" aria-hidden="true"></i>
+					<input type="password" name="Password" placeholder="Password" required="">
+				</div>
+				<div class="agile_remember">
+					<div class="agile_remember_left">
+						<div class="check">
+							<label class="checkbox"><input type="checkbox" name="checkbox"><i> </i>remember me</label>
+						</div>
+					</div>
+					<div class="agile_remember_right">
+						<a href="#">Forgot Password?</a>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<input type="submit" value="login">
+			</form>
+			<h5>Don't have an account? <a href="#small-dialog1" class="play-icon popup-with-zoom-anim">Sign Up</a></h5>
+		</div>
+	</div>
+	<div id="small-dialog1" class="mfp-hide w3ls_small_dialog wthree_pop">
+		<h3>Sign Up</h3>		
+		<div class="agileits_modal_body">
+			<form action="#" method="post">
+				<h4>Profile information :</h4>
+				<div class="agileits_w3layouts_user">
+					<i class="fa fa-user" aria-hidden="true"></i>
+					<input type="text" name="Name" placeholder="First Name" required="">
+				</div>
+				<div class="agileits_w3layouts_user">
+					<i class="fa fa-user" aria-hidden="true"></i>
+					<input type="text" name="Name" placeholder="Last Name" required="">
+				</div>
+				<div class="agileinfo_subscribe">
+					<div class="check">
+						<label class="checkbox"><input type="checkbox" name="checkbox"><i> </i>subscribe to newsletter</label>
+					</div>
+				</div>
+				<h4>Login information :</h4>
+				<div class="agileits_w3layouts_user">
+					<i class="fa fa-envelope-o" aria-hidden="true"></i>
+					<input type="email" name="Email" placeholder="Email" required="">
+				</div>
+				<div class="agileits_w3layouts_user agileits_w3layouts_user_agileits">
+					<i class="fa fa-key" aria-hidden="true"></i>
+					<input type="password" name="Password" placeholder="Password" required="">
+				</div>
+				<div class="agileits_w3layouts_user">
+					<i class="fa fa-key" aria-hidden="true"></i>
+					<input type="password" name="Password" placeholder="Confirm Password" required="">
+				</div>
+				<div class="agileinfo_subscribe">
+					<div class="check">
+						<label class="checkbox"><input type="checkbox" name="checkbox"><i> </i>i accept the terms and conditions</label>
+					</div>
+				</div>
+				<input type="submit" value="Register">
+			</form>
+			<h5>Already a member <a href="#small-dialog" class="play-icon popup-with-zoom-anim">Sign In</a></h5>
+		</div>
+	</div>
+ --><!--//pop-up-box -->
+<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+<script>
+	$(document).ready(function() {
+	$('.popup-with-zoom-anim').magnificPopup({
+		type: 'inline',
+		fixedContentPos: false,
+		fixedBgPos: true,
+		overflowY: 'auto',
+		closeBtnInside: true,
+		preloader: false,
+		midClick: true,
+		removalDelay: 300,
+		mainClass: 'my-mfp-zoom-in'
+	});
+																	
+	});
+</script>
+<!-- banner -->
+    
 <!-- events -->
 	<div id="events" class="events">
-        
 		<div class="container">
-            <div class="w3_agileits_head" style="padding: 20px; border: 150px; border-color: red"><h1><span class="w3_child">છા</span><span class="w3_child1">વા</span></h1></div>
-			
-            <h3 class="w3_agileits_head">Our Latest <span class="w3_child">E</span><span class="w3_child1">v</span><span class="w3_child2">e</span><span class="w3_child4">n</span><span class="w3_child">t</span><span class="w3_child1">s</span></h3>
+			<h3 class="w3_agileits_head">Our Latest <span class="w3_child">E</span><span class="w3_child1">v</span><span class="w3_child2">e</span><span class="w3_child4">n</span><span class="w3_child">t</span><span class="w3_child1">s</span></h3>
 			<p class="w3_agile_elit">Quisque dictum elit in nunc malesuada lacinia. Cras id porttitor turpis.</p>
 			<div class="agile_banner_bottom_grids">
 				<div class="agile_events_grid">
@@ -117,8 +351,144 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 <!-- //events -->
-        
-        <!-- work -->
+
+
+
+<!-- team -->
+	<div id="team" class="team" style="background-image: url(images/texture-shardul1.jpeg); background-size: cover">
+		<div class="container">
+			<h3 class="w3_agileits_head">Our <span class="w3_child">T</span><span class="w3_child1">e</span><span class="w3_child">a</span><span class="w3_child4">m</span> Players</h3>
+			<p class="w3_agile_elit">Quisque dictum elit in nunc malesuada lacinia. Cras id porttitor turpis.</p>
+			<div class="agile_banner_bottom_grids">
+				<div class="w3_slider">
+					<ul class="slides">
+						<li class="slide">
+							<div class="col-md-3 wthree_team_grid">
+								<img src="images/7.jpg" alt=" " class="img-responsive" />
+								<div class="wthree_team_grid_w3">
+									<h4>Olivia Wilde</h4>
+									<p>Teacher</p>
+									<div class="wthree_team_grid_w3_pos">
+										<ul class="agileinfo_social_icons">
+											<li><a href="#" class="w3ls_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+											<li><a href="#" class="agileits_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+											<li><a href="#" class="w3l_google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 wthree_team_grid">
+								<img src="images/9.jpg" alt=" " class="img-responsive" />
+								<div class="wthree_team_grid_w3">
+									<h4>Brett Cullen</h4>
+									<p>Teacher</p>
+									<div class="wthree_team_grid_w3_pos">
+										<ul class="agileinfo_social_icons">
+											<li><a href="#" class="agileits_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+											<li><a href="#" class="w3_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+											<li><a href="#" class="w3ls_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 wthree_team_grid">
+								<img src="images/8.jpg" alt=" " class="img-responsive" />
+								<div class="wthree_team_grid_w3">
+									<h4>Emma Stone</h4>
+									<p>Teacher</p>
+									<div class="wthree_team_grid_w3_pos">
+										<ul class="agileinfo_social_icons">
+											<li><a href="#" class="w3_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+											<li><a href="#" class="w3l_google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+											<li><a href="#" class="w3ls_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 wthree_team_grid">
+								<img src="images/10.jpg" alt=" " class="img-responsive" />
+								<div class="wthree_team_grid_w3">
+									<h4>Jorge Nicolas</h4>
+									<p>Teacher</p>
+									<div class="wthree_team_grid_w3_pos">
+										<ul class="agileinfo_social_icons">
+											<li><a href="#" class="w3l_google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+											<li><a href="#" class="w3ls_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+											<li><a href="#" class="agileits_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="clearfix"> </div>
+						</li>
+						<li class="slide">
+							<div class="col-md-3 wthree_team_grid">
+								<img src="images/7.jpg" alt=" " class="img-responsive" />
+								<div class="wthree_team_grid_w3">
+									<h4>Olivia Wilde</h4>
+									<p>Teacher</p>
+									<div class="wthree_team_grid_w3_pos">
+										<ul class="agileinfo_social_icons">
+											<li><a href="#" class="w3ls_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+											<li><a href="#" class="agileits_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+											<li><a href="#" class="w3l_google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 wthree_team_grid">
+								<img src="images/9.jpg" alt=" " class="img-responsive" />
+								<div class="wthree_team_grid_w3">
+									<h4>Brett Cullen</h4>
+									<p>Teacher</p>
+									<div class="wthree_team_grid_w3_pos">
+										<ul class="agileinfo_social_icons">
+											<li><a href="#" class="agileits_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+											<li><a href="#" class="w3_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+											<li><a href="#" class="w3ls_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 wthree_team_grid">
+								<img src="images/8.jpg" alt=" " class="img-responsive" />
+								<div class="wthree_team_grid_w3">
+									<h4>Emma Stone</h4>
+									<p>Teacher</p>
+									<div class="wthree_team_grid_w3_pos">
+										<ul class="agileinfo_social_icons">
+											<li><a href="#" class="w3_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+											<li><a href="#" class="w3l_google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+											<li><a href="#" class="w3ls_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 wthree_team_grid">
+								<img src="images/10.jpg" alt=" " class="img-responsive" />
+								<div class="wthree_team_grid_w3">
+									<h4>Jorge Nicolas</h4>
+									<p>Teacher</p>
+									<div class="wthree_team_grid_w3_pos">
+										<ul class="agileinfo_social_icons">
+											<li><a href="#" class="w3l_google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+											<li><a href="#" class="w3ls_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+											<li><a href="#" class="agileits_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="clearfix"> </div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- //team -->
+
+
+    <!-- work -->
 	<div id="work" class="work">
 		<div class="container">
 			<h3 class="w3_agileits_head">Our <span class="w3_child">W</span><span class="w3_child1">o</span><span class="w3_child4">r</span><span class="w3_child2">k</span> in Nursery</h3>
@@ -334,7 +704,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 <!-- //work -->
-        
+<!-- newsletter -->
+	<!--<div id="newsletter" class="newsletter">
+		<div class="container">
+			<div class="col-md-5 w3layouts_newsletter_left">
+				<h3>Subscribe to our newsletter</h3>
+			</div>
+			<div class="col-md-6 w3layouts_newsletter_right">
+				<form action="#" method="post">
+					<input type="email" name="Email" placeholder="Email..." required="">
+					<input type="submit" value="Subscribe">
+				</form>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>-->
+<!-- //newsletter -->
 <!-- contact -->
 	<div id="mail" class="contact">
 		<div class="container">
@@ -431,10 +816,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<h4>Navigation</h4>
 				<ul>
 					<li><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i><a href="index.html">Home</a></li>
-					<li><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i><a href="#about" class="scroll">academics</a></li>
-					<li><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i><a href="#programs" class="scroll">centers</a></li>
-					<li><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i><a href="#team" class="scroll">team</a></li>
-					<li><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i><a href="#events" class="scroll">events</a></li>
+					<li><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i><a href="index.html#about" class="scroll">academics</a></li>
+					<li><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i><a href="index.html#programs" class="scroll">centers</a></li>
+					<li><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i><a href="/index.html#programs" class="scroll">team</a></li>
+					<li><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i><a href="index.html#events" class="scroll">events</a></li>
 				</ul>
 			</div>
 			<!--<div class="col-md-3 wthree_footer_grid_left1">
