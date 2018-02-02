@@ -2676,7 +2676,7 @@ span.char26 {
 	}
 	.wthree_team_grid {
 		float: none;
-		width: 45%;
+		width: 100%;
 	}
 	.wthree_team_grid:nth-child(2) {
 		margin: 2em 0;
