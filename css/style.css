@@ -2259,6 +2259,7 @@ span.char26 {
 	.wthree_team_grid {
 		float: left;
 		width: 50%;
+
 	}
 	.wthree_team_grid:nth-child(2){
 		margin-bottom:2em;
