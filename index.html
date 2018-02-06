@@ -40,7 +40,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	#navbar {
   position: fixed;
   top: -90px;
-  transition: all 500ms ease;
+  transition: all 600ms ease;
 }
         
   
@@ -52,7 +52,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         
         
 .accordion {
-    background-color: #65b126;
+    background-color: white;
     color: #444;
     cursor: pointer;
     padding: 18px;
@@ -75,7 +75,42 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     overflow: hidden;
 }        
 
+        .stickynav {
+            position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  }
+ /*changing logo css*/       
+.changing_logo1 {
+  position: fixed top: 0;
+/*  z-index: 1;*/
+  width: 100%;
+}
+
+.changing_logo1 .changing_logo2 {
+  position: fixed;
+  text-align: left;
+/*  z-index: 2;*/
+  top: 0;
+  overflow: hidden;
+}
+        
+
+
 </style>
+    
+<script> $(document).on('scroll', function() {
+  if ($(document).scrollTop() >= 200) {
+    $('.changing_logo2 img').css('width', '50px');
+  } else {
+    $('.changing_logo2 img').css('width', '');
+  }
+});
+    
+    
+    
+</script>
     
     </head>
 	
@@ -97,7 +132,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>-->
     
-                               <div class="w3_navigation">
+                               <div class="w3_navigation stickynav" style="z-index: 10202020000  ;position: sticky;background: linear-gradient(#cae8ca,white)" >
 		<div class="container">
 			<nav class="navbar navbar-default">
 				<div class="navbar-header navbar-left">
@@ -108,8 +143,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<span class="icon-bar"></span>
 					</button>
 					<div class="w3_navigation_pos" > 
-                        <h1 style="border-radius: 0 0px 100px 100px;z-index: 5000;background-color:white">
-						<a href="index.html"><img src="images/logo_png.png"></a>
+                        <h1 style="border-radius: 0 0px 100px 100px; z-index: 1500000000000000000000000000">
+                        
+                        <div class="changing_logo1">
+                        <div class="changing_logo2">
+                            <a href="index.html"><img src="images/logo_png.png"></a> </div></div>                            
+                    
                     </h1></div>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
@@ -152,7 +191,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 			</div>
     </div></div>-->
-    <div class="hiddensmartphone">
+  <!--  <div class="hiddensmartphone">
     <div style="position: fixed; z-index: 150000; width:100%; top:-90px;">
     <div class="w3_navigation" id="navbar" style="width:100%;background: linear-gradient(white,#fff5cc 70%,white);">
 		<div class="container">
@@ -163,7 +202,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<a href="index.html"><img src="images/logo_small.png"   ></a>
                     </h1></div>
 				</div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
+				 Collect the nav links, forms, and other content for toggling 
 				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 					<nav class="menu menu--miranda">
 						<ul class="nav navbar-nav menu__list"id="navlink" style="float:right">
@@ -190,7 +229,7 @@ function scrollFunction() {
         document.getElementById("navbar").style.top = "-90px";
     }
 }
-</script>
+</script>-->
     
     
     
@@ -476,18 +515,21 @@ function scrollFunction() {
 							
                             <button class="accordion">Section 1</button>
 <div class="panel" id="p1"> 
+    
+  <p style="color: black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
      <a href="pg1.html#events" class="btn btn-info" role="button">Events</a>
                               <a href="pg1.html#team" class="btn btn-info" role="button">Team</a>
                               <a href="pg1.html#work" class="btn btn-info" role="button">Gallery</a>
-  <p style="color: black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
 
 <button class="accordion">Section 2</button>
 <div class="panel" id="p2">
-    <a href="pg1.html#events" class="btn btn-info" role="button">Events</a>
+   
+  <p style="color: black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br><br>asdlkfh<br><br>dshaf</p>
+    
+     <a href="pg1.html#events" class="btn btn-info" role="button">Events</a>
                               <a href="pg1.html#team" class="btn btn-info" role="button">Team</a>
                               <a href="pg1.html#work" class="btn btn-info" role="button">Gallery</a>
-  <p style="color: black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br><br>asdlkfh<br><br>dshaf</p>
 </div>
 
 <script>
@@ -520,15 +562,13 @@ for (i = 0; i < acc.length; i++) {
 							</ul>-->
 						</div>
 						<div class="w3layouts_vertical_tab">
-                              <a href="pg1.html#events" class="btn btn-info" role="button">Events</a>
-                              <a href="pg1.html#team" class="btn btn-info" role="button">Team</a>
-                              <a href="pg1.html#work" class="btn btn-info" role="button">Gallery</a>
+                             
                             
                             <p> hhhhhhhDonec felis mi, tristique in sodales non, porttitor id orci. 
 								Mauris vulputate placerat justo vitae sollicitudin. Nunc venenatis tortor 
 								dapibus magna commodo gravida.
 								<i>" Cras feugiat dui augue, in malesuada sem porta id. Mauris tempor 
-									aliquam risus eget sagittis. Nulla eu imperdiet mauris.</i></p>
+									aliquam risus eget sagittis. Nulla eu imperdiet mauris.</i></p>                        
 							<ul>
 								<li><i class="fa fa-check-square-o" aria-hidden="true"></i>Nulla eu imperdiet mauris in nunc</li>
 								<li><i class="fa fa-check-square-o" aria-hidden="true"></i>Vestibulum posuere eros et ante auctor</li>
@@ -536,12 +576,12 @@ for (i = 0; i < acc.length; i++) {
 								<li><i class="fa fa-check-square-o" aria-hidden="true"></i>Suspendisse potenti uisque dictum elit</li>
 								<li><i class="fa fa-check-square-o" aria-hidden="true"></i>Phasellus a eros eleifend, vehicula ante</li>
 							</ul>
-						</div>
-						<div class="w3layouts_vertical_tab">
-                            <a href="pg1.html#events" class="btn btn-info" role="button">Events</a>
+                             <a href="pg1.html#events" class="btn btn-info" role="button">Events</a>
                               <a href="pg1.html#team" class="btn btn-info" role="button">Team</a>
                               <a href="pg1.html#work" class="btn btn-info" role="button">Gallery</a>
-                        
+						</div>
+						<div class="w3layouts_vertical_tab">
+                            
 							<p>Integer ac condimentum ligula. Ut malesuada in purus convallis venenatis, 
 								lobortis nunc. Pellentesque maximus ipsum turpis.Nulla eu imperdiet mauris.
 								 Fusce cursus convallis malesuada.
@@ -554,11 +594,13 @@ for (i = 0; i < acc.length; i++) {
 								<li><i class="fa fa-check-square-o" aria-hidden="true"></i>Suspendisse potenti uisque dictum elit</li>
 								<li><i class="fa fa-check-square-o" aria-hidden="true"></i>Phasellus a eros eleifend, vehicula ante</li>
 							</ul>
-						</div>
-						<div class="w3layouts_vertical_tab">
-                             <a href="pg1.html#events" class="btn btn-info" role="button">Events</a>
+                            <a href="pg1.html#events" class="btn btn-info" role="button">Events</a>
                               <a href="pg1.html#team" class="btn btn-info" role="button">Team</a>
                               <a href="pg1.html#work" class="btn btn-info" role="button">Gallery</a>
+                        
+						</div>
+						<div class="w3layouts_vertical_tab">
+                             
 							<p>Quisque dictum elit in nunc malesuada lacinia. Cras id porttitor turpis. 
 								Nulla scelerisque ut lectus vitae tincidunt. Duis nec tellus at nunc blandit 
 								malesuada.Cras rhoncus varius arcu.
@@ -571,6 +613,9 @@ for (i = 0; i < acc.length; i++) {
 								<li><i class="fa fa-check-square-o" aria-hidden="true"></i>Suspendisse potenti uisque dictum elit</li>
 								<li><i class="fa fa-check-square-o" aria-hidden="true"></i>Phasellus a eros eleifend, vehicula ante</li>
 							</ul>
+                            <a href="pg1.html#events" class="btn btn-info" role="button">Events</a>
+                              <a href="pg1.html#team" class="btn btn-info" role="button">Team</a>
+                              <a href="pg1.html#work" class="btn btn-info" role="button">Gallery</a>
 						</div>
 					</div>
 				</div>
