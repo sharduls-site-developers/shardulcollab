@@ -99,7 +99,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 </style>
     <script>$(document).on('scroll', function() {
-  if ($(document).scrollTop() >= 50) {
+  if ($(document).scrollTop() >=70) {
     $('.stickynav2 img').css('width', '65px');
     $('.w3_navigation_pos').css('left','43%')
   } else {
@@ -128,12 +128,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="clearfix"> </div>
 		</div>
 	</div>-->
+    <script>
+            $(document).ready(function(){
+                $('#collapser').click(function(){
+                        $('.stickynav2 img').css('width', '65px');
+
+    });
+});
+        
+    </script>
     <div class="stickynav">
                                <div class="w3_navigation" style="height: 73px; background: white   ">
 		<div class="container">
 			<nav class="navbar navbar-default">
 				<div class="navbar-header navbar-left">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<button type="button" class="navbar-toggle collapsed" id="collapser" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
