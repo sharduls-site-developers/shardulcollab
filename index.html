@@ -96,6 +96,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   overflow: hidden;
   opacity: 1;
 }
+        
+.mySlides {display:none;}
+
 
 </style>
     <script>$(document).on('scroll', function() {
@@ -856,13 +859,34 @@ for (i = 0; i < acc.length; i++) {
 						</li>
 					</ul>
 					<h3>About <span>Nursery</span> / Parent</h3>
-					<p>Mauris vulputate placerat justo vitae sollicitudin. Nunc venenatis tortor dapibus 
+					<p class="mySlides">Mauris vulputate placerat justo vitae sollicitudin. Nunc venenatis tortor dapibus 
 						magna commodo gravida. Nunc non maximus augue, sit amet dictum diam. Etiam ultrices 
 						hendrerit sapien, id volutpat tortor viverra et.</p>
+                    <p class="mySlides">2</p>
+                    <p class="mySlides">3</p>
+                    <p class="mySlides">4</p>
+                    <p class="mySlides">5</p>
+                    
 				</div>
 			</div>
 		</div>
 	</div>
+    <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
 <!-- //testimonials -->
     <!-- work -->
 	<!--<div id="work" class="work">
