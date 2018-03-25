@@ -1,5 +1,5 @@
-<?php
-if (isset($_POST['submit']))  {      
+<?php <script type="text/javascript">alert("working");</script>
+if (isset($_POST['submit'])")  {      
           // Instructions if $_POST['value'] exist    
     $name=$_POST["Name"];
     $Email=$_POST["Email"];
