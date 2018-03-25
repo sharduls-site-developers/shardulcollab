@@ -1,4 +1,5 @@
-<?php <script type="text/javascript">alert("working");</script>
+<?php 
+<script type="text/javascript">alert("working")</script>
 if (isset($_POST['submit'])")  {      
           // Instructions if $_POST['value'] exist    
     $name=$_POST["Name"];
