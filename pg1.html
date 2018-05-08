@@ -73,53 +73,69 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     overflow: hidden;
 }        
 
-</style>
-    
-    </head>
-	
-<body>
+ .stickynav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index:1000000000;
+  background-color: #cae8ca;
+ 
+}
+        .stickynav1 {
+  position: fixed top: 0;
+  z-index: 1;
+  width: 100%;
+}
 
-<!-- header -->
-<!--	<div class="w3_agile_header">
-		<div class="container">
-			<div class="w3_agile_header_left">
-				<p>Suspendisse porta varius urna.</p>
-			</div>
-			<div class="w3_agile_header_right">
-				<ul>a
-					<li><a href="#small-dialog" class="play-icon popup-with-zoom-anim">Login</a></li>
-					<li><i class="fa fa-phone" aria-hidden="true"></i> +(0123) 454 343</li>
-				</ul>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>-->
-    
-                               <div class="w3_navigation">
+.stickynav1 .stickynav2 {
+  position: fixed;
+  text-align: left;
+  z-index: 2;
+  top: 0;
+  overflow: hidden;
+  opacity: 1;
+}
+
+</style>
+    <script>$(document).on('scroll', function() {
+  if ($(document).scrollTop() >=50) {
+    $('.stickynav2 img').css('width', '65px');
+    $('.w3_navigation_pos').css('left','43%')
+  } else {
+    $('.stickynav2 img').css('width', '');
+    $('.w3_navigation_pos').css('left','')
+  }
+});
+</script>
+    <div class="stickynav">
+                               <div class="w3_navigation" style="height: 73px; background: white   ">
 		<div class="container">
 			<nav class="navbar navbar-default">
 				<div class="navbar-header navbar-left">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<button type="button" class="navbar-toggle collapsed" id="collapser" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<div class="w3_navigation_pos" > 
-                        <h1 style="border-radius: 0 0px 100px 100px;z-index: 5000;background-color:white">
-						<a href="index.html"><img src="images/logo_png.png"></a>
-                    </h1></div>
+					<div class="w3_navigation_pos" > <div class="stickynav1">
+                        <div class="stickynav2">
+                        <h1 style="border-radius: 0 0px 100px 100px;z-index: 5000;background-color:white ">
+						
+                            <a href="index.html"><img src="images/logo_png.png"  ></a>
+                            
+                    </h1></div></div></div>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 					<nav class="menu menu--miranda">
 						<ul class="nav navbar-nav menu__list" id="navlink">
-							<li class="menu__item menu__item--current"><a href="index.html" class="menu__link">Home</a></li>
-							<li class="menu__item"><a href="/shardulcollab/index.html#about" class="menu__link">Academics</a></li>
-							<li class="menu__item thirdli"><a href="/shardulcollab/index.html#programs" class="menu__link">Centers</a></li>
-                            <li class="menu__item"><a href="/shardulcollab/index.html#team" class="menu__link">Team</a></li>
-							<li class="menu__item"><a href="/shardulcollab/index.html#testimonials" class="menu__link">Testimonials</a></li>
-							<li class="menu__item"><a href="/shardulcollab/pg1.html#mail" class=" menu__link">Contact Us</a></li>
+							<li class="menu__item menu__item--current"><a href="index.html" class="menu__link" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Home</a></li>
+							<li class="menu__item"><a href="#about" class="scroll menu__link"data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Academics</a></li>
+							<li class="menu__item thirdli"><a href="#programs" class="scroll menu__link"data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Centers</a></li>
+                            <li class="menu__item"><a href="#team" class="scroll menu__link"data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Team</a></li>
+							<li class="menu__item"><a href="#testimonials" class="scroll menu__link"data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Testimonials</a></li>
+							<li class="menu__item"><a href="#mail" class="scroll menu__link"data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">contact Us</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -127,6 +143,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
     </div>
     
+    </div>
     
 <!--    <div class="w3_navigation"><div style="z-index: 10009;background-color: white;">-->
 		
@@ -150,56 +167,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 			</div>
     </div></div>-->
-    <div class="hiddensmartphone">
-    <div style="position: fixed; z-index: 150000; width:100%; top:-90px;">
-    <div class="w3_navigation" id="navbar" style="width:100%;background: linear-gradient(white,#fff5cc 70%,white);">
-		<div class="container">
-			<nav class="navbar navbar-default">
-				<div class="navbar-header navbar-left">
-					
-					<div > <h1 style="z-index: 5000;background-color:white;padding:5px;margin:auto">
-						<a href="index.html"><img src="images/logo_small.png"   ></a>
-                    </h1></div>
-				</div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-					<nav class="menu menu--miranda">
-						<ul class="nav navbar-nav menu__list"id="navlink" style="float:right">
-							<li class="menu__item menu"><a href="index.html" class="menu__link"style="padding: 15px">Home</a></li>
-							<li class="menu__item"><a href="/shardulcollab/index.html#about" class=" menu__link"style="padding: 15px">Academics</a></li>
-							<li class="menu__item "><a href="/shardulcollab/index.html#programs" class=" menu__link"style="padding: 15px">Centers</a></li>			
-							<li class="menu__item"><a href="/shardulcollab/index.html#team" class=" menu__link"style="padding: 15px">Team</a></li>
-                            <li class="menu__item"><a href="/shardulcollab/index.html#testimonials" class=" menu__link"style="padding: 15px">Testimonials</a></li>
-							<li class="menu__item"><a href="/shardulcollab/pg1.html#mail" class="menu__link" style="padding: 15px">Contact Us</a></li>
-						</ul>
-					</nav>
-				</div>
-			</nav>	
-		</div>
-        </div></div></div>
-    <script>
-// When the user scrolls down 20px from the top of the document, slide down the navbar
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-    if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
-        document.getElementById("navbar").style.top = "0";
-    } else {
-        document.getElementById("navbar").style.top = "-90px";
-    }
-}
-</script>
-    
-    
-    
-    
     
     
 
-
-    
-    
-    <div "style= z-index: 1">
 <!-- //header -->
 <!-- pop-up-box--
 	<div id="small-dialog" class="mfp-hide w3ls_small_dialog wthree_pop">
@@ -890,7 +860,7 @@ function scrollFunction() {
 		<div class="container">
 			<p>© 2017 Nursery. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts.</a></p>
 		</div>
-    </div></div>
+    </div>
 <!-- //footer -->
 <!-- contact-effect -->
 <script src="js/classie.js"></script>
