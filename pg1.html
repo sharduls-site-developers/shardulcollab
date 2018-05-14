@@ -97,13 +97,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 }
 
 </style>
-    <script>$(document).on('scroll', function() {
-  if ($(document).scrollTop() >=50) {
-    $('.stickynav2 img').css('width', '65px');
-    $('.navigation_pos').css('left','43%')
-  } else {
-    $('.stickynav2 img').css('width', '');
-    $('.navigation_pos').css('left','')
+    <script>
+        $flag=0;
+        $(document).on('scroll', function() {
+            
+  if ($(document).scrollTop() >=500 && $flag==0 ){
+//    $('.stickynav2 img').animate({width: '-=30%'});
+      $('.stickynav2 img').animate({height: '-=30px'});
+    $('.navigation_pos').animate({left:'+=1.5%'});
+      $flag=1;
+  } else if($(document).scrollTop() <=500 && $flag==1){
+    $('.stickynav2 img').animate({height: '+=30px'});
+    $('.navigation_pos').animate({left:'-=1.5%'});
+    $flag=0;
   }
 });
 </script>
@@ -122,7 +128,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <div class="stickynav2">
                         <h1 style="border-radius: 0 0px 100px 100px;z-index: 5000;background-color:white ">
 						
-                            <a href="index.html"><img src="images/logo_png.png"  ></a>
+                            <a href="index.html"><img src="images/logo_png.png"  id="compress"></a>
                             
                     </h1></div></div></div>
 				</div>
