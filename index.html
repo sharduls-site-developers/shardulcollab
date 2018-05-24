@@ -115,6 +115,35 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   }
 });
 </script>
+
+<!--    ajax script-->
+<script>
+function _(id){ return document.getElementById(id); }
+function submitForm(){
+	_("mybtn").disabled = true;
+	_("status").innerHTML = 'please wait ...';
+	var formdata = new FormData();
+	formdata.append( "input-22", _("input-22").value );
+	formdata.append( "input-23", _("input-23").value );
+	formdata.append( "input-24", _("input-24").value );
+	formdata.append( "m", _("m").value );
+
+	var ajax = new XMLHttpRequest();
+	ajax.open( "POST", "sendfeedbackform.php" );
+	ajax.onreadystatechange = function() {
+		if(ajax.readyState == 4 && ajax.status == 200) {
+			if(ajax.responseText == "success"){
+				_("status").innerHTML = '<h2>Thanks '+_("input-22").value+', your message has been sent.</h2>';
+			} else {
+				_("status").innerHTML = ajax.responseText;
+				_("mybtn").disabled = false;
+                alert("there is some problem. please resend");
+			}
+		}
+	}
+	ajax.send( formdata );
+}
+</script>
     
     </head>
 	
@@ -1043,10 +1072,11 @@ function carousel() {
 				<div class="clearfix"> </div>
 			</div>
 			<div class="agile_banner_bottom_grids">
-				<form  action="sendfeedbackform.php" method="post">
+
+                <form id="my_form" onsubmit="submitForm(); return false;">
 					<div class="col-md-6 agileits_contact_left">
 						<span class="input input--akira">
-							<input class="input__field input__field--akira" type="text" id="input-22" name="Name" placeholder="" required="" />
+							<input class="input__field input__field--akira" type="text" id="input-22" placeholder="" required="" />
 							<label class="input__label input__label--akira" for="input-22">
 								<span class="input__label-content input__label-content--akira">Your Name</span>
 							</label>
@@ -1066,16 +1096,18 @@ function carousel() {
 					</div>
 					<div class="col-md-6 agileits_contact_right">
 						<div class="agileits_contact_right1">
-							<textarea name="Message" placeholder="Your comment here..." required=""></textarea>
+							<textarea name="Message" id="m" placeholder="Your comment here..." required=""></textarea>
 						</div>
 						<div class="agileits_contact_right2">
-							<input type="submit" name="submit" value=" ">
+							<input type="submit" name="submit" id="mybtn" value=" ">
 						</div>
 						<div class="clearfix"> </div>
 					</div>
 					<div class="clearfix"> </div>
-				</form>   <iframe src="/web/formresponse.html" width="100%"height="50"name="formdestiny" style="display:none"></iframe>
+				</form>
+                <div id="status"></div>
 			</div>
+
 		</div>
 	</div>
     <!-- //contact -->
