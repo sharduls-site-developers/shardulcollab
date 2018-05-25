@@ -21,7 +21,7 @@ if( isset($_POST['input-22']) && isset($_POST['input-23']) && isset($_POST['inpu
     $mail->SetFrom('name@yourdomain.com', 'Web App');
     $mail->Subject = $s;
     $mail->MsgHTML($m);
-    $mail->AddAddress($e, $n);
+    $mail->AddAddress('vishwkpatel@gmail.com', $n);
 
     
     if(!$mail->Send()) {
