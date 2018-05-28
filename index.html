@@ -102,10 +102,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--    logo animation script-->
     
  <script>
+        $f1=0;
         $flag=0;
         $(document).on('scroll', function() {
-            
-  if ($(document).scrollTop() >=500 && $flag==0 ){
+        
+  if ($(document).scrollTop() >=500 && $flag==0 && $f1==0 ){
       $('.stickynav2 img').animate({height: '-=30px'});
     $('.navigation_pos').animate({left:'+=1.5%'});
       $flag=1;
@@ -116,15 +117,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   }
 });
      //logo animate on menu button click
-     var f1=0;
+     
      function small_logo(){ 
-         if(f1==0 &&$flag==0){
+         if($f1==0 &&$flag==0){
      $('.stickynav2 img').animate({height: '-=50px'});
-            f1=1;
+            $f1=1;
          }
-         else if(f1==1){
+         else if($f1==1){
      $('.stickynav2 img').animate({height: '+=50px'});
-             f1=0;
+             $f1=0;
          }
          }
 </script>
