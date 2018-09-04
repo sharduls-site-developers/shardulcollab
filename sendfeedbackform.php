@@ -12,8 +12,8 @@ if( isset($_POST['input-22']) && isset($_POST['input-23']) && isset($_POST['inpu
     $mail->Host="smtp.gmail.com";
     $mail->IsSMTP();
     $mail->SMTPAuth=true;
-    $mail->Username="sohampatelforapple@gmail.com";
-    $mail->Password="MAIL PURPOSE";
+    $mail->Username="use your own";
+    $mail->Password="use your own";
 
     $mail->SMTPSecure="ssl";
     $mail->Port=465;
